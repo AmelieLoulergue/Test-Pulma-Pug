@@ -1,0 +1,35 @@
+{
+    "title": "Bienvenue sur le test Bytel",
+    "description": "Test technique visant à comprendre la logique d'utilisation d'un framework CSS",
+    "navbars": [
+        {
+            "content": "Accueil",
+            "title": "Lien vers l'accueil",
+            "href": "/accueil"
+        },
+        {
+            "content": "Portfolio",
+            "title": "Lien vers mon super portfolio",
+            "href": "/portfolio"
+        },
+        {
+            "content": "Accueil",
+            "title": "Lien la page contact",
+            "href": "/contact"
+        }
+    ],
+    "socials": [
+        {
+            "title": "Instagram",
+            "text": "Core rouge sur mon profil"
+        },
+        {
+            "title": "Telegram",
+            "text": "Je rigole je suis pas vieux à ce point"
+        },
+        {
+            "title": "Twitter",
+            "text": "J'y vais rarement mais why not"
+        }
+    ]
+}
