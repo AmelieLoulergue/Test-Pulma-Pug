@@ -1,5 +1,5 @@
 {
-    "title": "Bienvenue sur le test Bytel",
+    "title": "Bienvenue sur le test Bulma / Pug",
     "description": "Test technique visant à comprendre la logique d'utilisation d'un framework CSS",
     "navbars": [
         {
@@ -25,11 +25,11 @@
         },
         {
             "title": "Telegram",
-            "text": "Je rigole je suis pas vieux à ce point, bien que télégram ne soit pas forcément déstiné uniquement aux personnes agées"
+            "text": ""
         },
         {
             "title": "Twitter",
-            "text": "J'y vais rarement mais why not"
+            "text": "J'y vais rarementes mais why not"
         }
     ],
     "products": [
