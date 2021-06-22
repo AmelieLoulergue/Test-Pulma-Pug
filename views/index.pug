@@ -1,5 +1,25 @@
 extends layout
 
+include mixins/cover
+
 block content
-  h1= title
-  p Welcome to #{title}
+  include components/navbar
+  .container
+    section.section
+      h1.title.is-1= title
+      h2.subtitle.is-4= description
+    section.section 
+      .columns
+        for social in socials 
+          .column
+            .box.custo-is-fullheight
+              p.is-size-2.mb-3= social.title
+              p.text= social.text
+    section.section
+      .block.is-hidden-touch
+        +cover(products[0], 'lame')
+      .block
+        .columns
+          for product in products 
+            .column
+              +cover(product, 'bp')

@@ -1,0 +1,12 @@
+mixin cover(item, type)
+    .box.custo-is-fullheight
+        .columns.is-vcentered.is-multiline
+            .column.is-hidden-touch(class=(type === 'lame') ? '': 'is-4')
+                img(src=item.mea)
+            .column(class=(type === 'lame') ? 'is-7': '')
+                span.tag.is-danger.is-rounded.mb-2= item.tag
+                p(class=(type === 'lame') ? 'is-size-2': 'is-size-4') !{item.title}
+                p.is-size-1.mb-4.has-text-primary= item.price
+                p.is-size-7.has-text-grey= item.mention
+            .column.is-align-content-center(class=(type === 'lame') ? 'is-2': 'is-full')
+                a.button.is-primary(href=item.cta.href)= item.cta.txt
