@@ -1,0 +1,18 @@
+.container
+    section.section
+        .navbar
+            .navbar-brand 
+                a.navbar-burger(role="button", aria-label="menu", data-target="navbar-menu", aria-expanded="false")
+                    each val in [1, 2, 3]
+                        span
+            .navbar-menu(id="navbar-menu")
+                ul.navbar-start
+                    for navbar in navbars 
+                        li(title=navbar.title)
+                            a.navbar-item(href=navbar.href)= navbar.content
+                        
+                .navbar-end
+                    .navbar-item
+                        .buttons
+                            a.button.is-light(href="#") S'enregistrer 
+                            a.button.is-primary(href="#") Se connecter
