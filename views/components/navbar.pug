@@ -1,3 +1,4 @@
+//-use of existing script.js in public folder for navbar-burger 
 .container
     section.section
         .navbar
@@ -5,6 +6,7 @@
                 a.navbar-burger(role="button", aria-label="menu", data-target="navbar-menu", aria-expanded="false")
                     each val in [1, 2, 3]
                         span
+                    //- add this loop for the design of the burger with 3 lines
             .navbar-menu(id="navbar-menu")
                 ul.navbar-start
                     for navbar in navbars 

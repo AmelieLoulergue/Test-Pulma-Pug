@@ -1,3 +1,6 @@
+/* Addition of this class because no full height class found on Pulma
+ => apart from .hero.is-fullheight 
+but less clean implementation than the addition of this class in my opinion */
 .fullheight{
     height:100%
 }

@@ -6,9 +6,10 @@
         .columns
             for social in socials 
                 .column.is-4
-                        div.box.fullheight
-                            p.is-size-2.mb-3= social.title
-                            p.text= social.text
+                    div.box.fullheight 
+                        p.is-size-2.mb-3= social.title
+                        p.text= social.text
+                    //- add custom class fullheight for this box
     section.section
         .block.is-hidden-touch
             +cover(products[0], 'lame')

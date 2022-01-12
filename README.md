@@ -1,3 +1,9 @@
+Amélie Loulergue : 3h pour réaliser l'exercice 
+Retour d'expérience : 
+* VSCode non adapté au langage pug donc plus de temps à prendre en main (sensible à l'indentation et pas de message de VScode). J'aurais dû télécharger un autre IDE pour être plus efficace. 
+* Je n'ai vu que tardivement l'utilisation des flexbox avec Bulma... (dans les helpers de la doc). 
+* Exercie très intéressant à réaliser et découverte de PUG et Bulma :)
+
 # Test intégration Bulma / Pug
 
 **Documentation :**
@@ -12,7 +18,7 @@
  - `git clone https://gitlab.com/jvenerosy/test-bulma.git`
  - `npm install`
  
-**Lancement :** à vous de trouver
+**Lancement :** *npm start* (package.json)
 
 ----
 
