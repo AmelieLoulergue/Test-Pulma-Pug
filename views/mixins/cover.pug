@@ -1,12 +1,26 @@
 mixin cover(item, type)
-    .box.custo-is-fullwidth
-        .columns 
-            .column.is-4
-                img(src=item.mea)
-            .column.is-4
-                p.text= item.tag
-                p.is-size-2.mb-3= item.title
-                p.text= item.price
-                p.text= item.mention
-            .column.is-4
-                a.button(href=item.cta.href)= item.cta.txt
+    .box.fullheight
+        .columns
+            .column
+                .media.is-hidden-mobile
+                    .media-left
+                    if(type === 'lame')
+                        .image.is-200x300
+                            img(src=item.mea)
+                    else 
+                        .image.is-96x96
+                            img.mt-5(src=item.mea)
+                            a.button.mt-6.is-primary(href=item.cta.href)= item.cta.txt
+
+            .column.is-6.is-gapless
+                p.text.tag.is-rounded.is-danger= item.tag
+                if(type === 'lame')
+                    p.is-size-3.mb-3= item.title
+                else 
+                    p.is-size-5=item.title
+                p.title.is-4.has-text-primary= item.price
+                p.text.is-size-7= item.mention
+
+            if(type === 'lame')
+                .column.is-flex.is-align-items-center.is-justify-content-flex-end
+                    a.button.is-primary(href=item.cta.href)= item.cta.txt
